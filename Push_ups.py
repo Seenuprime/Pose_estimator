@@ -35,7 +35,7 @@ while cap.isOpened():
         height, width, _ = image.shape
 
         threshold = shoulder_mid + 0.13
-        cv.circle(image, (int(width/2), int(threshold *height)), 5, (255, 0, 0), -1)
+        # cv.circle(image, (int(width/2), int(threshold *height)), 5, (255, 0, 0), -1)
         if threshold > elbow_mid :
             if push == 'up':
                 pushup_count += 1
